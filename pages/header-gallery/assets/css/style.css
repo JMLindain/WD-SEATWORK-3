@@ -1,0 +1,487 @@
+
+body {
+    font-family: 'myFont', Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    background: url(../img/background.gif) no-repeat center center fixed;
+    background-size: cover;
+    color: #c7d5e0; /* Steam text color */
+}
+
+.container {
+    text-align: left; /* Align text to the left */
+    background-color: rgba(255, 255, 255, 0.8); /* White container with transparency */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin: 20px;
+    width: 80%;
+}
+
+.top-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.top-buttons a {
+    text-decoration: none;
+    color: #000000;
+    background-color: #ffffff; /* White button color */
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-family: myFont;
+    font-size: 1em; /* Reduced font size */
+}
+
+h1 {
+    font-size: 3em; /* Reduced font size */
+    margin-bottom: 0.2em;
+    color: #000000; /* Black text color */
+    font-family: myFont;
+}
+
+h2 {
+    font-size: 1.5em; /* Reduced font size */
+    margin-bottom: 1em;
+    color: #333333; /* Dark grey */
+    font-family: myFont;
+}
+
+.header-gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 40px; /* Increased space between header designs */
+    margin-top: 20px;
+}
+
+.header-title {
+    margin-bottom: -30px; /* Adjusted margin to create space between titles and headers */
+    font-size: 1.2em; /* Reduced font size */
+    color: #000000; /* Black text color */
+}
+
+.header-design {
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin-left: 150px; /* Adjusted margin to create space for the title on the left */
+}
+
+.header-design-1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-design-1 .header-buttons-left, .header-design-1 .header-buttons-right {
+    display: flex;
+    gap: 20px;
+}
+
+.header-design-1 .header-buttons-left a, .header-design-1 .header-buttons-right a {
+    text-decoration: none;
+    color: #ffffff; /* White text color */
+    font-family: myFont;
+    font-size: 1.2em; /* Reduced font size */
+    padding: 10px 20px; /* Reduced padding */
+    background-color: #e73c3c; /* Dota 2 red */
+    border-radius: 5px;
+}
+
+.header-design-2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.9); /* Overwatch white */
+}
+
+.header-design-2 .logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.header-design-2 .logo-container img {
+    margin-right: 10px;
+}
+
+.header-buttons-left, .header-buttons-right {
+    display: flex;
+    gap: 20px;
+}
+
+.header-buttons-left a, .header-buttons-right a {
+    text-decoration: none;
+    color: #000000; /* Default black color */
+    font-family: myFont;
+    font-size: 1.2em; /* Reduced font size */
+    padding: 10px 20px; /* Reduced padding */
+    background-color: #ffffff; /* White button color */
+    border-radius: 5px;
+}
+
+.header-design-2 .header-buttons-right a {
+    color: #ff9c00; /* Overwatch orange */
+}
+
+.header-design-2 .header-buttons-right a.cta-button {
+    background-color: #ff9c00; /* Overwatch orange */
+    color: #ffffff; /* White text */
+    padding: 10px 20px; /* Reduced padding */
+    border-radius: 5px;
+}
+
+.header-design-3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #0e1a2b; /* League of Legends dark blue */
+}
+
+.header-design-3 .logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.header-design-3 .logo-container img {
+    margin-right: 10px;
+}
+
+.header-design-3 .header-buttons-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.header-design-3 .header-buttons-right a {
+    text-decoration: none;
+    color: #d4af37; /* League of Legends gold */
+    font-family: myFont;
+    font-size: 1.2em; /* Reduced font size */
+    padding: 10px 20px; /* Reduced padding */
+    background-color: #0e1a2b; /* Same as header background */
+    border: 2px solid #d4af37; /* Gold border */
+    border-radius: 5px;
+}
+
+.header-design-3 .search-bar {
+    padding: 10px;
+    font-size: 1em; /* Reduced font size */
+    border: 2px solid #d4af37; /* Gold border */
+    border-radius: 5px;
+    color: #ffffff; /* White text */
+    background-color: #0e1a2b; /* Same as header background */
+}
+
+.header-design-4 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff; /* Team Secret white background */
+}
+
+.header-design-4 .logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.header-design-4 .logo-container img {
+    margin-right: 10px;
+}
+
+.header-design-4 .header-buttons-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.header-design-4 .header-buttons-right a {
+    text-decoration: none;
+    color: #000000; /* Team Secret black */
+    font-family: myFont;
+    font-size: 1.2em; /* Reduced font size */
+    padding: 10px 20px; /* Reduced padding */
+    background-color: #ffffff; /* White button color */
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transition for minimalistic hover effect */
+}
+
+.header-design-4 .search-bar {
+    padding: 10px;
+    font-size: 1em; /* Reduced font size */
+    border-radius: 5px;
+    color: #000000; /* Black text */
+    background-color: #ffffff; /* White background */
+    border: 2px solid #000000; /* Black border */
+    transition: border-color 0.3s ease; /* Transition for minimalistic hover effect */
+}
+
+.header-design-4 .social-media {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.header-design-4 .social-media a {
+    color: #000000; /* Team Secret black */
+    font-size: 1.2em; /* Reduced font size */
+    transition: color 0.3s ease; /* Transition for minimalistic hover effect */
+}
+
+.header-design-4 .social-media a:hover {
+    color: #c7d5e0; /* Steam text color on hover */
+}
+
+.header-design-5 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff; /* Nike white */
+}
+
+.header-design-5 .logo-container {
+    display: flex;
+    align-items: center;
+    max-width: 70%; /* Ensure the logo container doesn't take up too much space */
+}
+
+.header-design-5 .logo-container img {
+    margin-right: 10px;
+}
+
+.header-design-5 .header-buttons-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.header-design-5 .header-buttons-right a {
+    text-decoration: none;
+    color: #000000; /* Black text color */
+    font-family: myFont;
+    font-size: 1.2em; /* Reduced font size */
+    padding: 10px 20px; /* Reduced padding */
+    background-color: #ffffff; /* Same as header background */
+    border-radius: 5px;
+}
+
+.header-design-5 .shopping-cart {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #000000; /* Black text color */
+    font-size: 1.2em; /* Reduced font size */
+}
+
+.header-design-5 .shopping-cart img {
+    width: 24px;
+    height: 24px;
+    filter: invert(0); /* Make icon black */
+}
+
+.header-design-5 .user-account {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #000000; /* Black text color */
+    font-size: 1.2em; /* Reduced font size */
+}
+
+.header-design-5 .user-account img {
+    width: 24px;
+    height: 24px;
+    filter: invert(0); /* Make icon black */
+}
+
+.header-design-5 .search-bar {
+    padding: 10px;
+    font-size: 1em; /* Reduced font size */
+    color: #000000; /* Black text */
+    background-color: #ffffff; /* White background */
+    border-radius: 5px;
+    margin-left: 70px; /* Adjusted margin to prevent overflow */
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-container img {
+    max-height: 50px;
+}
+
+.social-media img {
+    width: 24px;
+    height: 24px;
+}
+
+/* Animated Header Design 1 */
+.animated-header-design-1 .header-buttons-left a, .animated-header-design-1 .header-buttons-right a {
+    transition: box-shadow 0.3s ease;
+}
+
+.animated-header-design-1 .header-buttons-left a:hover, .animated-header-design-1 .header-buttons-right a:hover {
+    box-shadow: 0 0 5px #ff0000, 0 0 10px #ff0000; /* Reduced intensity */
+}
+
+.animated-header-design-1 .logo-container img {
+    transition: transform 0.3s ease;
+}
+
+.animated-header-design-1 .logo-container img:hover {
+    transform: rotate(10deg); /* Rotate logo on hover */
+}
+
+/* Animated Header Design 2 */
+.animated-header-design-2 .header-buttons-left a,
+.animated-header-design-2 .header-buttons-right a,
+.animated-header-design-2 .cta-button {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.animated-header-design-2 .header-buttons-left a:hover,
+.animated-header-design-2 .header-buttons-right a:hover,
+.animated-header-design-2 .cta-button:hover {
+    transform: scale(1.1); /* Scale up the button */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add a shadow */
+}
+/* Special effect for CTA button */
+.animated-header-design-2 .cta-button {
+    position: relative;
+    overflow: hidden;
+}
+
+.animated-header-design-2 .cta-button:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 200%;
+    height: 100%;
+    background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.5), transparent);
+    transition: left 0.5s ease;
+}
+
+.animated-header-design-2 .cta-button:hover:before {
+    left: 100%;
+}
+
+.animated-header-design-2 .logo-container img {
+    transition: transform 0.3s ease;
+}
+
+.animated-header-design-2 .logo-container img:hover {
+    transform: scale(1.1); /* Scale logo up on hover */
+}
+
+/* Animated Header Design 3 */
+.animated-header-design-3 .header-buttons-right a {
+    position: relative;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.animated-header-design-3 .header-buttons-right a:hover {
+    color: #ffffff; /* Change text to white on hover */
+    background-color: #d4af37; /* Change background to gold on hover */
+}
+
+.animated-header-design-3 .header-buttons-right a:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    border: 2px solid transparent;
+    transition: border-color 0.3s ease;
+}
+
+.animated-header-design-3 .header-buttons-right a:hover:before {
+    border-color: #d4af37; /* Change border to gold on hover */
+}
+
+.animated-header-design-3 .logo-container img {
+    transition: filter 0.3s ease;
+}
+
+.animated-header-design-3 .logo-container img:hover {
+    filter: brightness(1.5); /* Increase brightness on hover */
+}
+
+/* Animated Header Design 4 */
+.animated-header-design-4 .header-buttons-right a {
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transition for minimalistic hover effect */
+}
+
+.animated-header-design-4 .header-buttons-right a:hover {
+    background-color: #000000; /* Black background on hover */
+    color: #ffffff; /* White text on hover */
+}
+
+.animated-header-design-4 .search-bar {
+    border: 2px solid #000000; /* Black border */
+    transition: border-color 0.3s ease; /* Transition for minimalistic hover effect */
+}
+
+.animated-header-design-4 .search-bar:hover {
+    border-color: #c7d5e0; /* Steam text color border on hover */
+}
+
+.animated-header-design-4 .social-media a {
+    transition: color 0.3s ease; /* Transition for minimalistic hover effect */
+}
+
+.animated-header-design-4 .social-media a:hover {
+    color: #c7d5e0; /* Steam text color on hover */
+}
+
+.animated-header-design-4 .logo-container img {
+    transition: transform 0.3s ease;
+}
+
+.animated-header-design-4 .logo-container img:hover {
+    transform: translateY(-10px); /* Move logo up on hover */
+}
+
+/* Animated Header Design 5 */
+.animated-header-design-5 .header-buttons-right a {
+    position: relative;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.animated-header-design-5 .header-buttons-right a:hover {
+    color: #ff0000; /* Change text to red on hover */
+    transform: scale(1.1); /* Scale up on hover */
+}
+
+.animated-header-design-5 .search-bar {
+    transition: box-shadow 0.3s ease;
+}
+
+.animated-header-design-5 .search-bar:focus {
+    box-shadow: 0 0 10px #000000; /* Black shadow on focus */
+}
+
+.animated-header-design-5 .shopping-cart {
+    transition: transform 0.3s ease;
+}
+
+.animated-header-design-5 .shopping-cart:hover {
+    transform: rotate(20deg); /* Rotate on hover */
+}
+
+.animated-header-design-5 .logo-container img {
+    transition: opacity 0.3s ease;
+}
+
+.animated-header-design-5 .logo-container img:hover {
+    opacity: 0.7; /* Reduce opacity on hover */
+}
